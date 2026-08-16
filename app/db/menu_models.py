@@ -1,7 +1,7 @@
 from sqlalchemy import Column, ForeignKey, Numeric, String
-from app.db import base
+from app.db.base import Base
 
-class MenuItem(base):
+class MenuItem(Base):
     __tablename__ = "menu_items"
 
     id = Column(Numeric, primary_key=True)
