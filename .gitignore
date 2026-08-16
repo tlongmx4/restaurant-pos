@@ -23,6 +23,8 @@ venv/
 # Alembic (if you add later)
 migrations/versions/__pycache__/
 
+# IDE settings
 .idea/
 
+#Local HTTP tests
 test_main.http
