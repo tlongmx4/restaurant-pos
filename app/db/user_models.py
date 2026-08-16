@@ -6,5 +6,5 @@ from uuid import UUID
 class User(Base):
     __tablename__ = 'users'
     id = Column(UUID, primary_key=True, default=uuid.uuid4)
-    name = Column(String, index=True)
-
+    name = Column(String, nullable=False)
+    role = Column(String, nullable=False)
